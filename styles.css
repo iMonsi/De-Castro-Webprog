@@ -127,6 +127,7 @@ hr {
 }
 
 .skills {
+    margin-top: 15px;
     background-color: white;
     border-radius: 8px;
     padding: 10px;
@@ -305,5 +306,6 @@ hr {
     text-align: center;
     padding: 5px;
 }
+
 
 
