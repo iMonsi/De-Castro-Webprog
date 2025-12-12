@@ -8,6 +8,13 @@ body {
     transition: background-color 0.3s, color 0.3s;
 }
 
+hr {
+    border: none;
+    height: 1px;
+    background-color: #f4f4f4;
+    margin: 0;
+    width: 100%;
+}
 .darkmode {
     background-color: #212529;
     color: #f8f9fa;
@@ -82,7 +89,7 @@ body {
 .main-content {
     display: flex; 
     max-width: 1100px;
-    margin: 0 auto; 
+    margin: 40px auto; 
     padding: 20px;
     gap: 50px;
     line-height: 1.0;
@@ -300,3 +307,4 @@ body {
     text-align: center;
     padding: 5px;
 }
+
