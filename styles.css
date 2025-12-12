@@ -9,10 +9,8 @@ body {
 }
 
 hr {
-    border: none;
-    height: 1px;
-    background-color: #f4f4f4;
-    margin: 0;
+    height: 0px;
+    margin: 0px;
     width: 100%;
 }
 .darkmode {
@@ -307,4 +305,5 @@ hr {
     text-align: center;
     padding: 5px;
 }
+
 
