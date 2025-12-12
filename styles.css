@@ -1,0 +1,302 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: black;
+    line-height: 1.0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.darkmode {
+    background-color: #212529;
+    color: #f8f9fa;
+}
+
+.darkmode .navbar {
+    background-color: #212529;
+    transition: background-color 0.6s;
+}
+
+.darkmode .navbar a {
+    color: #f8f9fa;
+    transition: color 0.6s;
+}
+
+.darkmode .skills {
+   background-color: #212538;
+   color: #f8f9fa;
+   transition: background-color 0.8s, color 0.5s;
+}
+.darkmode .skills button {
+    border-color: grey;
+    color: white;
+}
+.darkmode .skills button:hover {
+    background-color: skyblue;
+    color: white;
+}
+
+.darkmode .edit-btn {
+    border-color: grey;
+    color: white;
+}
+
+.darkmode .edit-btn:hover {
+    background-color: skyblue;
+    color: white;
+}
+
+.darkmode .resize-controls .control-label {
+    color: white;
+}
+
+.darkmode .circle-btn {
+    background-color: #212538;
+    color: white;
+}
+
+.darkmode .circle-btn:hover {
+    background-color: skyblue;
+    color: black;
+}
+
+
+.navbar {
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 10px 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    padding: 15px;
+    color: black;
+}
+
+.navbar a:hover {
+    color: skyblue;
+}
+
+
+.main-content {
+    display: flex; 
+    max-width: 1100px;
+    margin: 0 auto; 
+    padding: 20px;
+    gap: 50px;
+    line-height: 1.0;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+
+.left-column {
+    flex: 1; 
+    text-align: center;
+    border-right: 2px solid #eee;
+    padding-right: 20px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.job-title {
+    color: gray;
+    font-style: italic;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+
+.contact {
+    font-family: 'Roboto Mono', monospace;
+    margin: 30px 0;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.skills {
+    background-color: white;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: left; 
+    width: 90%;
+
+
+}
+.skills h3 {
+    margin-top: 0px;
+}
+
+.skills dt {
+    font-size: 1.1em;
+    color: #969696;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.skills dd {
+    margin: 5px 0 5px 20px;
+    border-left: 3px solid;
+    padding: 5px 0;
+    padding-left: 10px;
+    transition: background-color 0.3s;
+}
+
+.skills dd:hover {
+    background-color: rgba(0, 123, 255, 0.1);
+}
+
+.skills button {
+    background-color: transparent;
+    border: 2px solid #ccc;
+    font-size: 12px;
+    padding: 5px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+    left: 230px;
+    top: 0px;
+}
+
+.skills button:hover {
+    border-color: #333333;
+    color: #333333;
+    background-color: #f0f0f0;
+}
+
+.right-column {
+    flex: 2; 
+    padding-top: 20px;
+}
+
+.info {
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 40px;
+    margin-top: -40px;
+}
+
+.info h2 {
+    border-bottom: 2px solid;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+.info p {
+    font-size: 18px;
+    padding: 10px;
+}
+
+.type {
+    line-height: 1.6;
+}
+
+
+.message-form input[type="text"], 
+.message-form input[type="email"],
+#msgBox
+{
+    width: 75%;
+    max-width: 400px;
+    padding: 10px;
+    margin-top: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#msgBox { 
+    resize: vertical;
+    min-height: 150px;
+}
+
+.submit-btn, .theme {
+    padding: 10px 20px;
+    background-color: #212538;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 5px;
+}
+
+.submit-btn:hover,
+.theme:hover {
+    background-color: skyblue;
+    color: black;
+}
+
+.theme {
+    position: absolute;
+    top: 28px;
+    right: 70px;
+    margin: 0;
+}
+.settings-bar button {
+    padding: 5px 10px;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 0;
+}
+.edit-btn {
+    background-color: transparent;
+    border: 2px solid #ccc;
+    font-size: 12px;
+    padding: 5px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.edit-btn:hover {
+    border-color: #333;
+    color: #333;
+    background-color: #f0f0f0;
+}
+
+.resize-label {
+    font-size: 13px;
+}
+
+.resize-main {
+
+    display: flex;
+    align-items: center;    
+    justify-content: center; 
+    gap: 10px;             
+    margin-top: 10px;
+}
+
+
+.circle-btn {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%; 
+    border: none;
+    background-color: lightgray;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.circle-btn:hover {
+    background-color: skyblue;
+    color: white;
+}
+
+.footer {
+    text-align: center;
+    padding: 5px;
+}
